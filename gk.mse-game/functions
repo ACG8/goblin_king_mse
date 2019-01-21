@@ -1,0 +1,13 @@
+getDarkPhaseColor := {
+	if card.timing == "Battle" then rgb(255, 102, 102) else
+	if card.timing == "March" then rgb(0, 204, 0) else
+	if card.timing == "Camp" then rgb(255, 255, 0) else
+	rgb(128, 128, 255)
+}
+
+getLightPhaseColor := {
+	if card.timing == "Battle" then rgb(255, 230, 230) else
+	if card.timing == "March" then rgb(230, 255, 230) else
+	if card.timing == "Camp" then rgb(255, 255, 230) else
+	rgb(230, 230, 255)
+}

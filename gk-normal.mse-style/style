@@ -1,0 +1,180 @@
+mse version: 2.0.0
+game: gk
+full name: Standard Style
+short name: Standard
+icon: goblin-king-symbol.png
+position hint: 1
+
+depends on: gk.mse-game
+
+card width: 500
+card height: 700
+card dpi: 200
+
+card style:
+
+	power:
+		left:	0
+		top: 	0
+		right:	100
+		bottom:	100
+		alignment: middle center
+		z index: 1
+		font:
+			name: calibri
+			size: 100
+			weight: bold
+			color: { getLightPhaseColor() }
+
+	name:
+		left:	100
+		top: 	0
+		right:	400
+		bottom:	100
+		alignment: middle center
+		z index: 1
+		font:
+			name: calibri
+			size: 40
+			weight: bold
+			color: { getLightPhaseColor() }
+
+	timing:
+		left:	400
+		top: 	0
+		right:	500
+		bottom:	100
+		alignment: middle center
+		z index: 2
+		font:
+			name: calibri
+			size: 100
+			weight: bold
+			color: rgba(0,0,0,0)
+
+	art:
+		left:	0
+		top: 	0
+		right:	500
+		bottom:	450
+		z index: -1
+
+	artist:
+		left:	0
+		top: 	425
+		right:	500
+		bottom:	450
+		alignment: middle left
+		z index: 1
+		font:
+			name: calibri
+			size: 5
+			weight: bold
+			color: rgb(0,0,0)
+
+	job:
+		left:	0
+		top: 	450
+		right:	500
+		bottom:	500
+		alignment: middle center
+		z index: 1
+		font:
+			name: calibri
+			size: 20
+			weight: bold
+			color: rgb(255,255,255)
+
+	ability:
+		left:	0
+		top: 	500
+		right:	500
+		bottom:	700
+		alignment: middle center
+		z index: 1
+		font:
+			name: calibri
+			size: 30
+			weight: bold
+			color: rgb(0,0,0)
+		always symbol: true
+		allow formating: false
+		symbol font:
+			name: gk-symbols
+			size: 48
+			alignment: middle center
+
+extra card field:
+	type: color
+	name: icon_box
+	editable: false
+	show statistics: false
+	save value: false
+	script: getLightPhaseColor()
+
+extra card field:
+	type: text
+	name: power_2
+	editable: false
+	show statistics: false
+	save value: false
+	script: card.power
+
+extra card field:
+	type: color
+	name: job_box
+	editable: false
+	show statistics: false
+	save value: false
+	script: getDarkPhaseColor()
+
+extra card field:
+	type: color
+	name: ability_box
+	editable: false
+	show statistics: false
+	save value: false
+	script: getLightPhaseColor()
+
+extra card field:
+	type: color
+	name: gradient
+	editable: false
+	show statistics: false
+	save value: false
+	script: rgb(0, 0, 0)
+
+extra card style:
+
+	ability_box:
+		left:	0
+		top: 	500
+		right:	500
+		bottom:	700
+
+	job_box:
+		left:	0
+		top: 	450
+		right:	500
+		bottom:	500
+
+	power_2:
+		left:	400
+		top: 	0
+		right:	500
+		bottom:	100
+		alignment: middle center
+		z index: 1
+		font:
+			name: calibri
+			size: 100
+			weight: bold
+			color: { getLightPhaseColor() }
+
+	gradient:
+		left:	0
+		top: 	0
+		right:	500
+		bottom:	400
+		z index: 0
+		mask: gradient.png

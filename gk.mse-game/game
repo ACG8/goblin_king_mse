@@ -1,0 +1,98 @@
+﻿mse version: 2.0.0
+full name: Goblin King
+short name: gk
+icon: goblin-king-symbol.png
+position hint:-42
+
+init script:
+	include file: functions
+
+set field:
+	type: text
+	name: set title
+	identifying: true
+
+card field:
+	type: text
+	name: name
+	description: Name of goblin depicted
+	identifying: true
+	card list visible: true
+	card list column: 0
+
+card field:
+	type: image
+	name: art
+	show statistics: false
+	description: artwork for this card
+	card list allow: false
+
+card field:
+	type: text
+	name: artist
+	show statistics: false
+	description: artist of card
+
+card field:
+	type: image
+	name: job_icon
+	show statistics: false
+	description: icon representing the job
+	card list allow: false
+
+card field:
+	type: text
+	name: job
+	description: Goblin's job
+	card list visible: true
+	card list column: 1
+
+card field:
+	type: choice
+	name: timing
+	description: When the goblin's ability occurs
+	choice: Battle
+	choice: March
+	choice: Camp
+	choice: Any
+	card list visible: true
+	card list column: 2
+
+card field:
+	type: text
+	name: ability
+	multi line: true
+	description: Textual representation of abilities
+
+card field:
+	type: text
+	name: power
+	description: Strength of card
+	card list allow: true
+	card list visible: true
+	card list column: 3
+
+
+card field:
+	type: text
+	name: time_created
+	editable: false
+	show statistics: false
+	save value: false
+	script: to_string(card.time_created,format:"%y-%m-%d, %H:%M:%S")
+	card list visible: true
+	card list name: Time Created
+	card list allow: true
+	card list column: 4
+
+card field:
+	type: text
+	name: time_modified
+	editable: false
+	show statistics: false
+	save value: false
+	script: to_string(card.time_modified,format:"%y-%m-%d, %H:%M:%S")
+	card list visible: true
+	card list name: Time Modified
+	card list allow: true
+	card list column: 5

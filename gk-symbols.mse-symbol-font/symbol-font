@@ -1,0 +1,84 @@
+mse version: 2.0.0
+image font size: 563
+horizontal space: 2
+
+symbol:
+	code: \[F\]
+	regex: yes
+	image: forest.png
+
+symbol:
+	code: \[D\]
+	regex: yes
+	image: desert.png
+
+symbol:
+	code: \[L\]
+	regex: yes
+	image: lake.png
+
+symbol:
+	code: \[S\]
+	regex: yes
+	image: swamp.png
+
+symbol:
+	code: \[R\]
+	regex: yes
+	image: ruins.png
+
+symbol:
+	code: \[T\]
+	regex: yes
+	image: town.png
+
+symbol:
+	code: \[A\]
+	regex: yes
+	image: any.png
+
+symbol:
+	code: \[M\]
+	regex: yes
+	image: mountain.png
+
+symbol:
+	code: \[C\]
+	regex: yes
+	image: city.png
+
+symbol:
+	code: \[g\]
+	regex: yes
+	image: goblin.png
+
+symbol:
+	code: \[m\]
+	regex: yes
+	image: meat.png
+
+symbol:
+	code: \[s\]
+	regex: yes
+	image: scrap.png
+
+symbol:
+	code: \[h\]
+	regex: yes
+	image: shinies.png
+
+symbol:
+	code: \[b\]
+	regex: yes
+	image: bones.png
+
+symbol:
+	code: \[v\]
+	regex: yes
+	image: move.png
+
+insert symbol menu:
+	item: F
+	item: D
+	item: L
+	item: S
